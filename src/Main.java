@@ -4,7 +4,7 @@ public class Main {
         int second = tab[1]; // definition of second element
         for(int i = 0 ; i < tab.length ; i++){ // definition of two for loops to add up every element
             for(int n = 0; n < tab.length ; n++){
-                if(first+second < tab[i]+tab[n] && tab[i] != tab[n] ){ //definition of if statement to check biggest sum of two numbers and to check if tey are not equal
+                if(first+second < tab[i]+tab[n] && i != n ){ //definition of if statement to check biggest sum of two numbers and to check if tey are not equal
                     first=tab[i]; //change of first element
                     second=tab[n]; //change of second element
                 }
